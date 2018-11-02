@@ -20,11 +20,6 @@ nav{
 	margin-top: 25px;
 	margin-left: 25%;
 }
-.backgroundImg{
-	position: relative;
-	top: 80px;
-	right: -20px;
-}
 .topnav{
     position: absolute;
     right: 100px;
@@ -48,10 +43,11 @@ nav{
 main{
 	display: flex;
 	flex-direction: column;
-	width: 100%;	
+	width: 100%;		
 }
 main .main_welcome{		
-	background-color: #000;	
+	background: url(img/fire background 2.jpg) center no-repeat black;
+	background-size: cover;
 	text-align: center;
 	padding: 100px 0 400px 0;
 
