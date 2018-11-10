@@ -11,34 +11,39 @@ li{
 body{
 	font-family: 'Open Sans', sans-serif;		
 }
-header{        
-	background: #000;	
-	width: 100%;	
-	display: flex;     
+nav{  
+  margin-left: 25%;
 }
-nav{
-	margin-top: 25px;
-	margin-left: 25%;
+.icon{
+  color: #999999;
+  float: none;
+  display: block;
+  text-align: center;
+  position: fixed;
+  left: 45px;
+  top: 1px;
+  font-size: 30px;
+  font-weight: bold;	
 }
 .topnav{
-    position: absolute;
-    right: 100px;
+    position: fixed;
+    left: -112px;
+    top: 50px;    
+    transition: all ease 1s;
 }
 .topnav a{
-	color: #fff;
-	text-align: center;
-	padding: 12px 15px;
-	font-size: 15px;
-	font-weight: bold;
-	border-left: solid 1px #000;
-	border-right: solid 1px #000;
+  color: #999999;
+  float: none;
+  display: block;
+  text-align: center;
+  padding: 12px 15px;
+  font-size: 15px;
+  font-weight: bold;
+  border: solid 1px transparent;  
 } 
 .topnav a:hover{
-	color: #FF8C00;
-	border: solid 1px #FF8C00;
-}
-.topnav .icon{
-	
+  color: #FF8C00;
+  border: solid 1px #FF8C00;  
 }
 main{
 	display: flex;
@@ -46,21 +51,25 @@ main{
 	width: 100%;		
 }
 main .main_welcome{		
-	background: url(img/fire background 2.jpg) center no-repeat black;
+	background: url("img/fire background.jpg") center no-repeat black;
 	background-size: cover;
 	text-align: center;
-	padding: 100px 0 400px 0;
+	padding: 100px 0 800px 0;
 
 }
 main .main_welcome p{
 	color: #999999;
 	font-size: 20px;
 	width: 76%;
+	position: absolute;
+	top : 750px;
 	margin-top: 25px;
 	margin-left: 10%;
 }
 main .main_welcome h1{
 	color: #999999;
+	position: relative;
+	top : 555px;
 	font-size: 44px;
 	margin-top: -60px;	
 }
@@ -69,6 +78,8 @@ main .main_welcome h1:after{
 }
 main .main_welcome h2{
     color: #999999;
+    position: relative;
+	top : 550px;
 	font-size: 44px;
 	margin-top: 10px;	
 }
@@ -122,10 +133,10 @@ main .main_about{
 	display: flex;
 }
 .card{
-	margin:30px 10px 10px 100px;
+	margin:26px 33px 10px 100px;
 }
 .name{
-	font-size: 20px;
+	font-size: 27px;
 	margin-bottom: 30px;
 }
 .position{
@@ -283,43 +294,7 @@ footer p a{
 @media screen and (max-width: 1160px){
 	nav{margin-left: 12%;
 	 }
-@media screen and (max-width: 1010px){
-  .topnav a{
-  	display: none;
-  	
-  	}
-  	.topnav a.icon{
-  		float: right;
-  		margin-top: -15px;
-  		display: block;
-  		color: #fff;
-  		font-size: 25px;
-  	}
-  	nav{
-  		width: 100%;
-  		
-  	}	
-  	.topnav.responsive{
-  		position: relative;
-  		top: 30px;
-  		left: -60px;
-  	}
-  	header .topnav.responsive{
-  		height: 200px;
-  	}
-  	.backgroundImg{
-	display: none;
-    }
-  	.topnav.responsive a.icon{
-  		position: absolute;
-  		top: -30px;
-  		right: 60px;
-  	}
-  	.topnav.responsive a{
-  		float: none;
-  		display: block;
-  		text-align: left;
-  	}
+@media screen and (max-width: 1010px){  
   	main .main_welcom{
   		padding: 50px 0 50px 0;
   	}
